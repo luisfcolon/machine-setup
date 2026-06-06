@@ -1,4 +1,4 @@
-# Install all the things
+# Setting up a new machine
 
 Script I run when setting up new hardware.
 
