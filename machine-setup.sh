@@ -26,7 +26,6 @@ declare -a project_folders=(
   "rust"
   "javascript"
   "shell"
-  "css"
   "tutorials"
 )
 

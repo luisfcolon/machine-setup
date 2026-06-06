@@ -10,6 +10,23 @@ cd ..
 rm -rf machine-setup
 ```
 
+## Directories Created
+
+| Directory                         | Description                                   |
+| --------------------------------- | --------------------------------------------- |
+| `~/Workspace`                     | Home base for local development               |
+| `~/Workspace/projects`            | Personal projects grouped by technology       |
+| `~/Workspace/repos`               | Cloned Git repositories and active codebases  |
+| `~/Workspace/docs`                | Personal notes, references, and documentation |
+| `~/Workspace/playground`          | Scratch space for experiments and prototypes  |
+| `~/Workspace/projects/python`     | Personal Python projects                      |
+| `~/Workspace/projects/ruby`       | Personal Ruby projects                        |
+| `~/Workspace/projects/golang`     | Personal Go projects                          |
+| `~/Workspace/projects/rust`       | Personal Rust projects                        |
+| `~/Workspace/projects/javascript` | JavaScript and Node.js projects               |
+| `~/Workspace/projects/shell`      | Shell scripts and command-line tooling        |
+| `~/Workspace/projects/tutorials`  | Personal projects built from tutorials        |
+
 ## Cask Installs
 
 | Cask                 | Description                                         |
