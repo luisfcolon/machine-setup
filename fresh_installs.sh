@@ -14,7 +14,6 @@ declare -a root_folders=(
 
 declare -a workspace_folders=(
   "projects"
-  "sites"
   "repos"
   "docs"
   "playground"
@@ -23,22 +22,19 @@ declare -a workspace_folders=(
 declare -a project_folders=(
   "python"
   "ruby"
+  "golang"
+  "rust"
   "javascript"
   "shell"
-  "scala"
   "css"
   "tutorials"
 )
 
 if ! command -v brew > /dev/null; then
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-if ! command brew ls --versions cask > /dev/null; then
-  brew install cask
-fi
-
-brew cask install \
+brew install --cask \
   docker \
   postman \
   iterm2 \
@@ -50,28 +46,28 @@ brew cask install \
   slack \
   spotify \
   alfred \
+  claude \
+  claude-code \
+  codex \
+  chatgpt \
+  espanso \
   openoffice \
   macdown \
   cyberduck \
   visual-studio-code \
-  sublime-text \
-  java8 \
   vlc \
-  ngrok \
-  1password
+  ngrok
 
 brew install \
   dos2unix \
   git \
   node \
+  vim \
   awscli \
   jq \
   jo \
-  docker-machine \
   imagemagick \
-  mcrypt \
   openssl \
-  python3 \
   redis \
   ssh-copy-id \
   wget \
@@ -81,25 +77,27 @@ brew install \
   elasticsearch \
   go \
   rbenv \
+  ruby-build \
   yarn \
+  pnpm \
   sass/sass/sass \
   gpg \
   ack \
-  scala \
-  sbt \
+  ripgrep \
+  p7zip \
+  yq \
+  pyenv \
+  uv \
   flyway \
   tree \
   pipenv \
   tmux \
   parallel \
-  hub \
   watchman \
   gh \
   tfenv
 
-npm install -g sass
 npm install -g gulp-cli
-npm install -g create-react-app
 
 pushd $HOME
 for folder in "${root_folders[@]}"
